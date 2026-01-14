@@ -55,7 +55,6 @@ intermediate frames serve as explicit reasoning steps, and the final frame is ta
 Recent video generation models have revealed the emergence of Chain-of-Frame (CoF) reasoning, enabling frame-by-frame visual inference.
 With this capability, video models have been successfully applied to various visual tasks (e.g., maze solving, visual puzzles).
 However, their potential to enhance text-to-image (T2I) generation remains largely under-explored due to the absence of a clearly defined visual reasoning starting point and interpretable intermediate states in the T2I generation process.
-
 To bridge this gap, we propose CoF-T2I, a model that integrates CoF reasoning into T2I generation via progressive visual refinement, where intermediate frames act as explicit reasoning steps and the final frame is taken as output.
 To establish such an explicit generation process, we curate CoF-Evol-Instruct, a dataset of CoF trajectories that models generation from semantics to aesthetics.
 To further improve quality and avoid motion artifacts, we enable independent encoding for each frame.
