@@ -8,12 +8,10 @@ Edits per your request:
 ======================================================= -->
 
 <div align="center">
-  <div style="display:flex; align-items:center; justify-content:center; gap:12px;">
-    <img src="assets/logo.png" alt="logo" height="48" />
-    <span style="font-weight:900; font-style:italic; color:#E67E22;">
-      <h1 style="margin:0; padding:0;">CoF-T2I:</h1>
-    </span>
-  </div>
+  <h1 style="border-bottom: none; margin-bottom: 0;">
+      <img src="assets/logo.png" alt="logo" height="48" style="vertical-align: bottom; margin-right: 10px;" />
+      <span style="color:#E67E22; font-style:italic; font-weight:900;">CoF-T2I:</span>
+  </h1>
 
   <h2 style="margin:10px 0 0 0;">
     Video Models as Pure Visual Reasoners for Text-to-Image Generation
