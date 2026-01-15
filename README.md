@@ -8,26 +8,25 @@ Edits per your request:
 ======================================================= -->
 
 <div align="center">
-
   <div style="display:flex; align-items:center; justify-content:center; gap:12px;">
-    <img src="assets/logo.png" alt="logo" style="height:48px; width:auto;" />
-    <span style="font-size:40px; font-weight:780; font-style:italic; color:#E67E22; line-height:1;">
-      CoF-T2I:
+    <img src="assets/logo.png" alt="logo" height="48" />
+    <span style="font-weight:900; font-style:italic; color:#E67E22;">
+      <h1 style="margin:0; padding:0;">CoF-T2I:</h1>
     </span>
   </div>
 
-  <div style="margin-top:14px; font-size:24px; font-weight:600; line-height:1.15; color:#000;">
+  <h2 style="margin:10px 0 0 0;">
     Video Models as Pure Visual Reasoners for Text-to-Image Generation
-  </div>
-
+  </h2>
 </div>
+
 
 <div align="center">
 <p style="margin-top:10px;">
   <a href='https://cof-t2i.github.io/'><img src='https://img.shields.io/badge/📰 Project-Page-blue' height="25"></a>
   <a href="#"><img src="https://img.shields.io/badge/arXiv-arXiv-red?style=badge&logo=arXiv" alt="Paper PDF" height="25"></a>
-  <a href='#'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-Coming%20Soon-lightgrey' height="25"></a>
   <a href='#'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Model-Comming%20Soon-lightgrey' height="25"></a>
+  <a href='#'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-Coming%20Soon-lightgrey' height="25"></a>
 </p>
 </div>
 
