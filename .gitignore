@@ -1,0 +1,15 @@
+**/__pycache__
+.idea/
+.vscode/
+.DS_Store
+*.log
+*.pyc
+.env
+.env.*
+__pycache__/
+.ipynb_checkpoints/
+output/
+checkpoints/
+results/
+data/
+logs/
