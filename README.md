@@ -7,23 +7,13 @@ Edits per your request:
 4) Shrink the "Comparison" figure (width=82%)
 ======================================================= -->
 
-<div align="center">
-  <h1 style="border-bottom: none; margin-bottom: 0;">
-      <img src="assets/logo.png" alt="logo" height="48" style="vertical-align: bottom; margin-right: 10px;" />
-      <span style="color:#E67E22; font-style:italic; font-weight:900;">CoF-T2I:</span>
-  </h1>
-
-  <h2 style="margin:10px 0 0 0;">
-    Video Models as Pure Visual Reasoners for Text-to-Image Generation
-  </h2>
-</div>
-
+![# CoF-T2I](./assets/header.png)
 
 <div align="center">
 <p style="margin-top:10px;">
   <a href='https://cof-t2i.github.io/'><img src='https://img.shields.io/badge/📰 Project-Page-blue' height="25"></a>
-  <a href="#"><img src="https://img.shields.io/badge/arXiv-arXiv-red?style=badge&logo=arXiv" alt="Paper PDF" height="25"></a>
-  <a href='#'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Model-Comming%20Soon-lightgrey' height="25"></a>
+  <a href="#"><img src="https://img.shields.io/badge/arXiv-coming%20soon-lightgrey?style=badge&logo=arXiv" alt="Paper PDF" height="25"></a>
+  <a href='#'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Model-Coming%20Soon-lightgrey' height="25"></a>
   <a href='#'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-Coming%20Soon-lightgrey' height="25"></a>
 </p>
 </div>
@@ -32,16 +22,15 @@ Edits per your request:
 
 ## ✨ News
 
-- **[2026.01.14]** 🚀🚀🚀 We have realsed **CoF-T2I: Video Models as Pure Visual Reasoners for Text-to-Image Generation**, checkout **[** [Paper](); [Website](https://cof-t2i.github.io) **]**.
+- **[2026.01.1x]** 🔥🔥🔥 We have released **CoF-T2I: Video Models as Pure Visual Reasoners for Text-to-Image Generation**, check out our 📄 [Paper](#) · 🌐 [Website](https://cof-t2i.github.io).
 
-## 🏔️ Todo List
+## 🎯 Todo List
 
 We are actively preparing to release the following:
   - [x] Paper & project page
   - [ ] Training & inference code
-  - [ ] CoF-T2I model checkpoints
+  - [ ] CoF-T2I model checkpoints & evaluation scripts
   - [ ] CoF-Evol-Instruct dataset
-  - [ ] Evaluation scripts
 
 ## 🎞️ CoF-T2I
 
@@ -59,7 +48,7 @@ intermediate frames serve as explicit reasoning steps, and the final frame is ta
 ### 🎯 Contributions
 - 🔭 **A novel generation paradigm**: We propose ***CoF-T2I***, a text-to-image model that repurposes a video foundation model as pure visual reasoner, generating images via a CoF reasoning process.
 
-- 🗂️ **A comprehensive dataset with scalable pipeline**: We introduce ***CoF-Evol-Instruct***, a 64K-scale dataset of progressive visual refinement trajectories, built with a scalable quality-aware pipeline.
+- 📖 **A comprehensive dataset with scalable pipeline**: We introduce ***CoF-Evol-Instruct***, a 64K-scale dataset of progressive visual refinement trajectories, built with a scalable quality-aware pipeline.
 
 - 📊 **Competitive results with extensive validation**: Our extensive experiments show that CoF-T2I substantially outperforms its video backbone and achieves competitive performance on challenging benchmarks, with additional validations confirming its substantial promise.
 
@@ -74,7 +63,7 @@ intermediate frames serve as explicit reasoning steps, and the final frame is ta
   </i>
 <p align="center">
 
-## 📑 CoF-Evol-Instruct
+### 📑 CoF-Evol-Instruct
 
 <p align="center">
   <img src="assets/pipeline.png" width="100%" />
@@ -83,43 +72,106 @@ intermediate frames serve as explicit reasoning steps, and the final frame is ta
 <i>We design a quality-aware construction pipeline and curate 64K reasoning trajectories, ensuring both sample-level diversity and frame-wise consistency.</i>
 </p>
 
+## 🚀 Quick Start (Coming Soon)
 
-<!-- ## 🖼️ Visualizations
+*We are preparing the release of training, inference, and evaluation code.*
 
-### 1) Dataset Visualizations
+## 📈 Key Results & 🖼️ More Visualizations
+
+<details>
+  <summary style="color:#555555;">
+    <i>Unfold to see our key results and more visualizations</i>
+  </summary>
+
+### 📈 Key Results
+
+### 1️⃣ Performance comparison on GenEval
+
+*The best and the second best **Overall** scores are in **bold** and <u>underlined</u>, respectively.*
+
+| Model | Single Obj. | Two Obj. | Counting | Colors | Position | Color Attr. | Overall ↑ |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| **_Standard Image Models_** |  |  |  |  |  |  |  |
+| SDXL | 0.98 | 0.74 | 0.39 | 0.85 | 0.15 | 0.23 | 0.55 |
+| SD3-Medium | 0.99 | 0.94 | 0.72 | 0.89 | 0.33 | 0.60 | 0.74 |
+| FLUX.1-dev | 0.99 | 0.88 | 0.61 | 0.87 | 0.35 | 0.55 | 0.67 |
+| **_Unified MLLMs_** |  |  |  |  |  |  |  |
+| Janus-Pro-7B | 0.99 | 0.89 | 0.59 | 0.90 | 0.79 | 0.66 | 0.80 |
+| BLIP3-o 8B | -- | -- | -- | -- | -- | -- | <u>0.84</u> |
+| OmniGen2 | 0.99 | 0.92 | 0.77 | 0.90 | 0.82 | 0.70 | 0.80 |
+| BAGEL | 0.99 | 0.94 | 0.81 | 0.88 | 0.64 | 0.63 | 0.78 |
+| BAGEL-Think | 0.99 | 0.94 | 0.81 | 0.88 | 0.64 | 0.63 | 0.82 |
+| T2I-R1 | 0.99 | 0.91 | 0.53 | 0.91 | 0.76 | 0.65 | 0.79 |
+| **_Video Models_** |  |  |  |  |  |  |  |
+| Wan2.1-T2V-14B | 0.92 | 0.63 | 0.57 | 0.69 | 0.18 | 0.31 | 0.55 |
+| **CoF-T2I (Ours)** | 0.98 | 0.95 | 0.83 | 0.89 | 0.83 | 0.71 | **0.86** |
+
+### 2️⃣ Performance comparison on Imagine-Bench
+
+*The best and the second best scores are in **bold** and <u>underlined</u>, respectively.*
+
+| Model | Attribute shift | Hybridization | Multi-Object | Spatiotemporal | Overall ↑ |
+|---|---:|---:|---:|---:|---:|
+| **_Standard Image Models_** |  |  |  |  |  |
+| SDXL | 4.420 | 4.930 | 4.500 | 6.320 | 4.970 |
+| SD3-Medium | 5.140 | 6.300 | 6.070 | 5.910 | 5.780 |
+| FLUX.1-dev | 5.680 | 6.380 | 5.240 | 7.130 | 6.060 |
+| **_Unified MLLMs_** |  |  |  |  |  |
+| Janus-Pro-7B | 5.300 | 6.730 | 6.040 | 7.280 | 6.220 |
+| BLIP3-o 8B | 5.800 | 7.060 | 6.440 | 7.080 | 6.510 |
+| OmniGen2 | 5.280 | 6.290 | 6.310 | 7.450 | 6.220 |
+| BAGEL | 5.370 | 6.500 | 6.410 | 6.930 | 6.200 |
+| BAGEL-Think | 6.260 | 7.740 | 6.960 | 7.130 | <u>6.930</u> |
+| T2I-R1 | 5.850 | 7.360 | 6.680 | 7.700 | 6.780 |
+| **_Video Models_** |  |  |  |  |  |
+| Wan2.1-T2V-14B | 5.436 | 6.950 | 5.383 | 6.237 | 5.939 |
+| **CoF-T2I (Ours)** | 6.969 | 8.070 | 7.797 | 7.287 | **7.468** |
+
+### 🖼️ More Visualizations
+
+### 1️⃣ Dataset Visualizations
 <p align="center">
   <img src="assets/vis_data.png" width="100%" />
 </p>
+<p align="center">
+  <i>Visualization of CoF-Evol-Instruct Dataset. We showcase the prompt and corresponding CoF trajectories in our data.</i>
+</p>
 
-### 2) Qualitative Comparison
+### 2️⃣ Qualitative Comparison
 <p align="center">
   <img src="assets/vis_comp.png" width="100%" />
 </p>
 <p align="center">
-  <i>Comparison of the baseline video model (Wan2.1-T2V), Bagel-Think, and CoF-T2I.</i>
+  <i>Comparison of the Wan2.1-T2V (baseline), Bagel-Think, and CoF-T2I. CoF-T2I produces satisfying results with both high photorealistic quality and precise alignment with the prompt.</i>
 </p>
 
-### 3) Reasoning Trajectories
+### 3️⃣ Reasoning Trajectories
 <p align="center">
   <img src="assets/vis_more.png" width="100%" />
 </p>
+<p align="center">
+  <i>Complete reasoning trajectories of CoF-T2I, including the intermediate frames and the final output alongside their corresponding prompts.</i>
+</p>
 
-### 4) Step-wise Quality Evolution
+### 4️⃣ Step-wise Quality Evolution
 <p align="center">
   <img src="assets/evol.png" width="100%" />
 </p>
 <p align="center">
   <i>Performance trend across reasoning steps on GenEval (left) and Imagine-Bench (right).</i>
-</p> -->
+</p>
 
-## 🫡 Acknowlegements
+</details>
+
+## 🫡 Acknowledgements
 
 We would like to thank the following open-source projects and research works:
 
 - [Diffsynth-Studio](https://github.com/modelscope/DiffSynth-Studio)
+- [Image-Gen-CoT](https://openaccess.thecvf.com/content/CVPR2025/papers/Zhang_Lets_Verify_and_Reinforce_Image_Generation_Step_by_Step_CVPR_2025_paper.pdf)
+- [DPO vs. GRPO](https://arxiv.org/pdf/2505.17017)
 - [Draft-as-CoT](https://arxiv.org/pdf/2512.05112)
-- [Think-while-Generating](https://think-while-gen.github.io/)
-- [Image-Gen-CoT](https://github.com/ZiyuGuo99/Image-Generation-CoT)
+- [Think-while-Generating](https://arxiv.org/abs/2511.16671)
 
 ## 🧾 Citation
 
@@ -133,3 +185,7 @@ If you find our work useful, please consider citing:
   year    = {2026},
   note    = {Project page: https://cof-t2i.github.io/}
 }
+```
+
+## 🏷️ License
+This repository is released under the MIT license. See [LICENSE](./LICENSE) for additional details.
