@@ -12,7 +12,7 @@ Edits per your request:
 <div align="center">
 <p style="margin-top:10px;">
   <a href='https://cof-t2i.github.io/'><img src='https://img.shields.io/badge/📰 Project-Page-blue' height="25"></a>
-  <a href="#"><img src="https://img.shields.io/badge/arXiv-coming%20soon-lightgrey?style=badge&logo=arXiv" alt="Paper PDF" height="25"></a>
+  <a href="https://arxiv.org/abs/2601.10061"><img src="https://img.shields.io/badge/arXiv-arXiv-red?style=badge&logo=arXiv" alt="Paper PDF" height="25"></a>
   <a href='#'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Model-Coming%20Soon-lightgrey' height="25"></a>
   <a href='#'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-Coming%20Soon-lightgrey' height="25"></a>
 </p>
@@ -22,7 +22,7 @@ Edits per your request:
 
 ## ✨ News
 
-- **[2026.01.1x]** 🔥🔥🔥 We have released **CoF-T2I: Video Models as Pure Visual Reasoners for Text-to-Image Generation**, check out our 📄 [Paper](#) · 🌐 [Website](https://cof-t2i.github.io).
+- **[2026.01.1x]** 🔥🔥🔥 We have released **CoF-T2I: Video Models as Pure Visual Reasoners for Text-to-Image Generation**, check out our 📄 [Paper](https://arxiv.org/abs/2601.10061) · 🌐 [Website](https://cof-t2i.github.io).
 
 ## 🎯 Todo List
 
@@ -178,12 +178,14 @@ We would like to thank the following open-source projects and research works:
 If you find our work useful, please consider citing:
 
 ```bibtex
-% TODO: update with arXiv/OpenReview link when available
-@misc{cof_t2i_2026,
-  title   = {CoF-T2I: Video Models as Pure Visual Reasoners for Text-to-Image Generation},
-  author  = {Tong, Chengzhuo and Chang, Mingkun and Zhang, Shenglong and Wang, Yuran and Liang, Cheng and Zhao, Zhizheng and Zeng, Bohan and Shi, Yang and An, Ruichuan and Zhao, Ziming and Li, Guanbin and Wan, Pengfei and Zhang, Yuanxing and Zhang, Wentao},
-  year    = {2026},
-  note    = {Project page: https://cof-t2i.github.io/}
+@misc{tong2026coft2ivideomodelspure,
+      title={CoF-T2I: Video Models as Pure Visual Reasoners for Text-to-Image Generation}, 
+      author={Chengzhuo Tong and Mingkun Chang and Shenglong Zhang and Yuran Wang and Cheng Liang and Zhizheng Zhao and Ruichuan An and Bohan Zeng and Yang Shi and Yifan Dai and Ziming Zhao and Guanbin Li and Pengfei Wan and Yuanxing Zhang and Wentao Zhang},
+      year={2026},
+      eprint={2601.10061},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2601.10061}, 
 }
 ```
 
