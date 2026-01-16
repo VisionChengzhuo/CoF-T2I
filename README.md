@@ -22,7 +22,7 @@ Edits per your request:
 
 ## ✨ News
 
-- **[2026.01.1x]** 🔥🔥🔥 We have released **CoF-T2I: Video Models as Pure Visual Reasoners for Text-to-Image Generation**, check out our 📄 [Paper](https://arxiv.org/abs/2601.10061) · 🌐 [Website](https://cof-t2i.github.io).
+- **[2026.01.16]** 🔥🔥🔥 We have released **CoF-T2I: Video Models as Pure Visual Reasoners for Text-to-Image Generation**, check out our 📄 [Paper](https://arxiv.org/abs/2601.10061) · 🌐 [Website](https://cof-t2i.github.io).
 
 ## 🎯 Todo List
 
